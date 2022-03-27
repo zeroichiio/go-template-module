@@ -12,6 +12,11 @@ Next inside the workspace this repo is cloned to make the nessecary new modules,
 This folder structure is based on the following community contributed structure:
 https://github.com/golang-standards/project-layout
 
+
+### 0.0 pretext
+
+This document expect that you have a working go and github environment. Setting up github settings or ssh-agent, gpg-agent on linix or windows, using git-bash or vscode or related components is outside of the scope of this document.
+
 ### 1.0 GO workspace
 if you are using multiple modules (using multiple packages) 
 
@@ -76,4 +81,5 @@ use (
 ### 3.0 add additional modules to workspace
 
 rinse and repeat cloning github in 2.1 through to 2.4
+
 
