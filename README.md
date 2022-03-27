@@ -47,8 +47,8 @@ go work use ./<module name>
 ```
 alternatively edit go.work file to include module folder
 
+**go.work**
 ```
---go.work--
 go 1.18
 
 use (
@@ -56,6 +56,7 @@ use (
   ./<module two name>
 )
 ```
+        
 ### 3.0 dd more modules
 
 rinse and repeat cloning github in 2.1 through to 2.3
