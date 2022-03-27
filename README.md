@@ -18,6 +18,8 @@ if you are using multiple modules (using multiple packages)
 - create base folder for workspace
  
 ```
+mkdir <my workspace name>
+cd <my workspace name>
 go work init <name of workspace>
 ```
 
@@ -28,13 +30,13 @@ go work init <name of workspace>
 - add gitub requirements
 ### 2.1 git clone
 ```
-git clone https://github.com/zeroichiio/template.git
+git clone https://github.com/zeroichiio/go-template-module.git
 ```
-- rename the folder
+- rename the folder *go-template-module to <module one name>
 ```
-cd <new name> 
+cd <module one name> 
 ```
-go mod init <module name>
+go mod init <module one name>
 
 ### 2.2 .git/config additions
 For signing github commits and so on (public/private) repositories:
@@ -43,18 +45,18 @@ For signing github commits and so on (public/private) repositories:
 
 ```
 [remote "origin"]
-	url = https://github.com/zeroichiio/<module name>.git
+	url = https://github.com/zeroichiio/<module one name>.git
 [user]
         email = <your github assigned email>
         name = <your github username>
-        signingkey = A69E641C4115DFB5 <your signing key in this form>
+        signingkey = A69E641C4115DFB5 <== your signing key in this form
 [commit]
-        gpgsign = true <default to signing commits> 
+        gpgsign = true <== default to signing commits
 ```
 
 ### 2.3 Use module in workspace
 ```
-go work use ./<module name>
+go work use ./<module one name>
 ```
 alternatively edit go.work file to include module folder
 
