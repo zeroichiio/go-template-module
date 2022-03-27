@@ -26,19 +26,22 @@ go work init <name of workspace>
 ### 2.0 GO module (template)
 
 - clone 
-- initalize
+- initialize 
 - add gitub requirements
 ### 2.1 git clone
 ```
 git clone https://github.com/zeroichiio/go-template-module.git
 ```
 - rename the folder *go-template-module to <module one name>
+
+### 2.2 initialize 
+use go mod init to make the go.mod file
 ```
 cd <module one name> 
-```
 go mod init <module one name>
+```
 
-### 2.2 .git/config additions
+### 2.3 .git/config additions
 For signing github commits and so on (public/private) repositories:
 
 **.git/config**
@@ -54,7 +57,7 @@ For signing github commits and so on (public/private) repositories:
         gpgsign = true <== default to signing commits
 ```
 
-### 2.3 Use module in workspace
+### 2.4 Use module in workspace
 ```
 go work use ./<module one name>
 ```
@@ -72,5 +75,5 @@ use (
         
 ### 3.0 add additional modules to workspace
 
-rinse and repeat cloning github in 2.1 through to 2.3
+rinse and repeat cloning github in 2.1 through to 2.4
 
