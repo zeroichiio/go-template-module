@@ -33,6 +33,8 @@ For signing github commits and so on (public/private) repositories:
 **.git/config**
 
 ```
+[remote "origin"]
+	url = https://github.com/zeroichiio/<module name>.git
 [user]
         email = <your github assigned email>
         name = <your github username>
