@@ -1,7 +1,16 @@
 # template
 GO mod template
 
-This is my standard **module** template that I use for new modules, this normally goes inside a GO **workspace**
+This is my general **module** template that I use for new GO modules, this also can go inside a GO **workspace** as of GO 1.18
+
+I use the workspace when there are mutliple modules (with or without multiple packages) that are **loosely linked together** for things like microservices or grpc that use a common module
+
+The idea is the go workspace is the base folder in the Go development folder, and that is where the GO workspace is created in 1.0 (below).
+
+Next inside the workspace this repo is cloned to make the nessecary new modules, and each module has its own github repo to allow for independant tagging and release of each module in the workspace, as I use VScode (and VS code add folder to VS Code workspace, this works for me for both GO, GOPLS, VSCODE, Intellisense and Independant Github versioning) Your millage might vary.
+
+This folder structure is based on the following community contributed structure:
+https://github.com/golang-standards/project-layout
 
 ### 1.0 GO workspace
 if you are using multiple modules (using multiple packages) 
