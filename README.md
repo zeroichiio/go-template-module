@@ -1,0 +1,2 @@
+# template
+GO mod template
