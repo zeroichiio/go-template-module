@@ -12,7 +12,7 @@ if you are using multiple modules (using multiple packages)
 go work init <name of workspace>
 ```
 
-### 2. GO module (template)
+### 2.0 GO module (template)
 
 - clone 
 - initalize
