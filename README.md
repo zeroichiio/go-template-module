@@ -7,7 +7,7 @@ This is my standard **module** template that I use for new modules, this normall
 if you are using multiple modules (using multiple packages) 
 
 - create base folder for workspace
-- 
+ 
 ```
 go work init <name of workspace>
 ```
@@ -26,11 +26,11 @@ git clone https://github.com/zeroichiio/template.git
 cd <new name> 
 ```
 go mod init <module name>
-```
 
 ### 2.2 .git/config additions
 For signing github commits and so on (public/private) repositories:
-## add to .git/config
+
+**.git/config**
 
 ```
 [user]
@@ -57,7 +57,7 @@ use (
 )
 ```
         
-### 3.0 dd more modules
+### 3.0 add additional modules to workspace
 
 rinse and repeat cloning github in 2.1 through to 2.3
 
